@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hiển thị số nguyên tố</title>
+</head>
+<body>
+	<script>
+		var num = prompt('nhap vao so nguyen to');
+		var count = 0;
+		var N = 2;
+
+		while(count<num){
+			var songuyento = true;
+			for(var i=2; i<=N-1;i++){
+				if(N%i==0){
+					songuyento = false;
+				}
+			}
+			if(songuyento){
+				document.write(N+'<br>');
+				count++;
+			}
+			N++;
+		}
+	</script>
+	
+</body>
+</html>

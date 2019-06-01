@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vòng Lặp For</title>
+</head>
+<body>
+	<script>
+		var N = prompt('nhap vao N');
+		N = parseInt(N);
+		//Tính tổng từ 1->N
+		var tong = 0;
+		for(var i = 1; i<=N; i++){
+			tong +=i; //tong = tong +i
+		}
+		alert('Tong = '+tong);
+
+		var sum = 0;
+		for(var i = 0, j = 10; i<=10; i++ , j--){
+			sum = i + j;
+			console.log('i = ' +i+ ' j = ' +j+ ' sum = ' +sum);
+		}
+		document.write('Ket qua: '+sum)
+	</script>
+</body>
+</html>
